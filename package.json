@@ -1,6 +1,6 @@
 {
   "name": "@gdapi/crypto",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Encrypt/Decrypt Geometry Dash related data",
   "main": "build/index.js",
   "module": "build/index.js",
@@ -9,7 +9,7 @@
     "build:test": "rimraf build && rollup --watch --config rollup.test.config.js",
     "karma:start": "karma start karma.config.js",
     "test:watch": "concurrently npm:karma:start npm:build:test --raw",
-    "prepare": "eslint src/**/*.js && npm build && karma start karma.config.js --single-run"
+    "prepublishonly": "eslint src/**/*.js && npm build && karma start karma.config.js --single-run"
   },
   "repository": {
     "type": "git",

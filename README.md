@@ -1,6 +1,8 @@
 Encrypt/Decrypt Geometry Dash related data.
 Works on both Node.js and browser.
 
+[Live Demo](https://stackblitz.com/edit/gdapi-crypto-demo?file=index.js)
+
 # Install
 First, install the package using NPM.
 ```npm install @gdapi/crypto```
@@ -44,7 +46,7 @@ H4sIAAAAAAAAA6Vbu47lNgz9Ic_CektYpNgUKQMkA2yANC5Szi_k42OJlK0HKQpIsfcudKgXeUiT9J2v
 Decrypted:
 ```
 kS38,1_248_2_249_3_255_11_255_12_255_13_255_4_-1_6_1000_7_1_15_1_18_0_8_1|1_0_2_0_3_0_11_255_12_255_13_255_4_-1_6_1001_7_1_15_1_18_0_8_1|1_0_2_102_3_255_11_255_12_255_13_255_4_-1_6_1009_7_1_15_1_18_0_8_1|1_0_2_0_3_0_11_255_12_255_13_255_4_-1_6_1002_5_1_7_1_15_1_18_0_8_1|1_125_2_255_3_0_11_255_12_255_13_255_4_-1_6_1005_5_1_7_1_15_1_18_0_8_1|1_0_2_255_3_255_11_255_12_255_13_255_4_-1_6_1006_5_1_7_1_15_1_18_0_8_1|1_0_2_0_3_0_11_255_12_255_13_255_4_-1_6_1_7_1_15_1_18_0_8_1|1_0_2_0_3_0_11_255_12_255_13_255_4_-1_6_1004_7_1_15_1_18_0_8_1|,kA13,111,kA15,0,kA16,0,kA14,,kA6,13,kA7,1,kA17,1,kA18,0,kS39,0,kA2,0,kA3,0,kA8,0,kA4,0,kA9,0,kA10,0,kA11,0;1,11,2,1,3,45,57,1;1,1007,2,-29,3,225,36,1,51,1,10,0,35,0;1,1022,2,165,3,345,57,1;1,211,2,375,3,285,20,3,21,1;1,200,2,335,3,247,57,1,6,45,13,1;1,211,2,315,3,315,20,3,21,1;1,211,2,315,3,255,20,3;
-(...skipped)
+(...more)
 ```
 
 __Note__ This function currently cannot decrypt official level data which can be found inside `levelData.plist`.

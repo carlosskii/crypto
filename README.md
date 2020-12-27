@@ -15,7 +15,7 @@ import * as Crypto from '@gdapi/crypto'
 ```
 
 # Docs
-## `decryptGameFile(gameFile: Uint8Array): string`
+## `decryptGameFile(gameFile: Uint8Array): Promise<string>`
 Decrypt game file(one of `CCGameManager.dat`, `CCGameManager2.dat`, `CCLocalLevels.dat`, `CCLocalLevels2.dat`) into a string.
 
 ### Example
@@ -32,10 +32,10 @@ Decrypted
 ```
 __Note__ Decrypted data is a simplified version of plist(Property list). You can parse it using `@gdapi/plist` package.
 
-## `encryptGameFile(data: string): Uint8Array`
+## `encryptGameFile(data: string): Promise<Uint8Array>`
 Encrypt data back to the `Uint8Array` which can be saved as game file.
 
-## `decryptLevel(levelData: string): string`
+## `decryptLevel(levelData: string): Promise<string>`
 Decrypt level data into a string. Can decrypt data that has Gzip or Zlib format.
 
 ### Example
@@ -51,5 +51,5 @@ kS38,1_248_2_249_3_255_11_255_12_255_13_255_4_-1_6_1000_7_1_15_1_18_0_8_1|1_0_2_
 
 __Note__ This function currently cannot decrypt official level data which can be found inside `levelData.plist`.
 
-## `encryptLevel(level: string): string`
+## `encryptLevel(level: string): Promise<string>`
 Encrypt level data into encrypted string.

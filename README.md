@@ -1,3 +1,8 @@
+# Warning: Legacy Code
+The repository has been moved to the [GDAPI monorepo](https://github.com/GDAPI/GDAPI). You can find the source code of this package [here](https://github.com/GDAPI/GDAPI/tree/main/packages/crypto).
+
+# About
+
 Encrypt/Decrypt Geometry Dash related data.
 Works on both Node.js and browser.
 
